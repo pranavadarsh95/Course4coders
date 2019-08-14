@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="user-scalable = no">
+    <title>COURSE4CODERS</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="design2.css">
+    <!--start of backward and forward button-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">  
+    <!--end of backward and forward button-->
+
+   <style type="text/css">
+
+   <!--search box content-->
+    
+    input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+} 
+
+   <!--end search box content-->
+
+   <!--start sidenav push-->
+    
+   body {
+    font-family: "Lato", sans-serif; 
+        }
+
+    .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    }
+
+   .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s
+    }
+
+    .sidenav a:hover, .offcanvas a:focus{
+    color: blue;
+    }
+
+    .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    }
+
+    #main {
+    transition: margin-left .5s;
+    display: inline-block; 
+    padding: 3px;
+          }
+
+   @media screen and (max-height: 450px) {
+     .sidenav {padding-top: 15px;}
+     .sidenav a {font-size: 18px;}
+    }
+
+     <!--end of sidenav push-->
+
+
+<!--start of developer information-->
+    
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+ <!--end of developer information-->
+
+
+
+   </style>
+  </head>  
+  <body style="background-color:lightgrey">
+  <center id="img01"><img src="images/course.png" alt="COURSE4CODERS" width="100%" height="10%"></center>
+
+  <!--start second border from here-->
+
+  <ul id="dd01">
+       <li id="find"><a href="home.html">HOME</a></li>
+  <li id="find"><a href="basics.html">BASICS</a></li>
+  <li id="find"><a href="historyofc.html">C</a></li>
+  <li id="find"><a href="historyofc++.html">C++</a></li>
+  <li id="find"><a href="historyofjava.html">JAVA</a></li>
+  <li id="find"><a href="historyofandroid.html">ANDROID</a></li>
+  <li id="find"><a href="historyoftechnology.html">TECHNOLOGY</a></li>
+  <li id="find"><a href="historyofdatastructure.html">DATASTRUCTURE</a></li>
+  <li id="find"><a href="historyofalgorithm.html">ALGORITHM</a></li>
+  <li id="find"><a href="quiz.html">QUIZ</a></li>
+  <li id="find"><a href="login.html">LOGIN</a></li>
+  <li id="find"><a href="signup.html">SIGNUP</a></li>
+  
+  <!--start sidenav code-->
+   
+   <div id="mySidenav" class="sidenav">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+  
+  <a id="findnav"  href="home.html">HOME</a>
+  <a id="findnav" href="basics.html">BASICS</a>
+  <a id="findnav" href="historyofc.html">C</a>
+  <a id="findnav" href="historyofc++.html">C++</a>
+  <a id="findnav" href="historyofjava.html">JAVA</a>
+  <a id="findnav" href="historyofandroid.html">ANDROID</a>
+  <a id="findnav" href="historyoftechnology.html">TECHNOLOGY</a>
+  <a id="findnav" href="historyofdatastructure.html">DATASTRUCTURE</a>
+  <a id="findnav" href="historyofalgorithm.html">ALGORITHM</a>
+  <a id="findnav" href="quiz.html">QUIZ</a>
+  <a id="findnav" href="login.html">LOGIN</a>
+  <a id="findnav" href="signup.html">SIGNUP</a>
+  
+    </div>
+
+   <div id="main">
+    <span style="font-size:40px;cursor:pointer;color:red" onclick="openNav()">&#9999; open</span>
+  </div>
+
+   <script>
+   function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+    document.getElementById("main").style.marginLeft = "300px";
+   }
+
+   function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+   }
+  </script> 
+  
+  <!--end of sidenav code--> 
+
+
+ 
+    <!-- code for Search Box -->
+         <form id="search">
+         <input type="text" name="search" placeholder="search">
+         </form>
+     <!-- code end  for search box-->
+ </ul>
+ <!--end of second border from here-->
+
+
+<!--start of first area code-->
+
+<div id="firstarea">
+<ul>
+<h3 class="find3">C HOME<h2 id="previousButton1"><a target="_top" href="https://www.youtube.com/embed/videoseries?list=PL2_aWCzGMAwLSqGsERZGXGkA5AfMhcknE">WATCH C VIDEOS</a></h2></h3>
+<li id="find2"><a target="_top" style="color:black;" href="historyofc.html" >HISTORY OF C</a></li>
+<li id="find2"><a target="_top" style="color:black;" href="whylearnc.html">WHY LEARN C?</a></li>
+<li id="find2"><a target="_top" style="color:black;" href="applicationofc.html">APPLICATIONS OF C</a></li>
+<li id="find2"><a target="_top" style="color:black;" href="installationofc.html">INSTALLATION OF C</a></li>
+<li id="find2"><a target="_top" style="color:black;" href="sourcevsobjectcode.html">Source Vs Object Code</a></li>
+<li id="find2"><a target="_top" style="color:black;" href="compilercommentskeywords.html">Compiler & Comments & Keywords</a></li>
+<li id="find2"><a target="_top" style="color:black;" href="constantvariable.html">Constant & Variable & its Declaration</a></li>
+<li id="find2"><a target="_top" style="color:black;" href="datatype.html">MORE</a></li>
+</ul>
+
+   <div id="popular2">
+     <center><h2 style="background-color:red;margin-left:5%;"><a target="_top" href="cbasicprogram.html">C BASIC PROGRAMS</a></h2></center> 
+    </div>  
+    
+    <div id="popular2">
+     <center><h2 style="background-color:red;margin-left:5%;"><a target="_top" href="cpatternprograms.html">C pattern PROGRAMS</a></h2></center> 
+    </div>
+
+
+   <div id="popular">
+   <ul>
+   <h2 id="previousButton2"><a target="_top" href="">POPULAR POSTS</a></h2>
+   <li id="find2"><a target="_top" href="historyofc++.html" style="color:brown;">C VS C++</a></li>
+   <li id="find2" style="list-style-type:none;";><a target="_top" href="historyofc++.html" style="color:brown;">C VS Java</a></li>
+   <li id="find2"><a target="_top" href="historyofc++.html" style="color:brown;">C++ VS Java</a></li>
+   <li id="find2"><a target="_top" href="historyofc++.html" style="color:brown;">BufferedReader VS Scanner in java</a></li>
+   <li id="find2"><a target="_top" href="historyofc++.html" style="color:brown;">Linkedlist vs array</a></li>
+   <li id="find2"><a target="_top" href="historyofc++.html" style="color:brown;">Stack vs Queue</a></li>
+   <li id="find2"><a target="_top" href="historyofc++.html" style="color:brown;">Tree VS Graph</a></li>
+   <li id="find2"><a target="_top" href="historyofc++.html" style="color:brown;">Preorder vs Postorder</a></li>
+   <li id="find2"><a target="_top" href="historyofc++.html" style="color:brown;">ANDROID VERSIONS</a></li>
+   <li id="find2"><a target="_top" href="historyofc++.html" style="color:brown;">Mobile Evaluation</a></li>
+   </ul>
+   </div>
+
+</div>
+
+<!--end of first area code--> 
+<!--start of second area code--> 
+
+<div id="secondarea">
+
+<div style="margin-right:5%;margin-left:5%;">
+
+<!--start of content-->
+
+<h2 style="text-align:center;text-decoration: underline;color:green;">C Tutorials</h2>
+<center><h2 id="topicheading"><a target="_top" href="">Installation of C</a></h2></center>
+<p>For running C program on windows/linux/Mac OS X we need compiler which will execute our program</p>
+<p>There are many compilers in market many of them are free of cost for running C language 
+  <center><h3 style="color:white;border: 2px solid yellow;background-color:black;">Some free C Compilers(which support both C/C++)</h3></center>
+   <p>DEV C++
+   <center><img style="border-radius:15%;" src="images/dev.jpg" alt="COURSE4CODERS" width="30%" height="10%"></center></p>
+   <p>CODE BLOCK
+   <center><img style="border-radius:15%;"src="images/codeblock.jpg" alt="COURSE4CODERS" width="50%" height="10%"></center></p>
+   <p>MICROSOFT VISUAL C/C++
+   <center><img style="border-radius:15%;" src="images/visual.jpg" alt="COURSE4CODERS" width="50%" height="10%"></center></p>
+   <p>TURBO C/C++(VERY OLD COMPILER so don't try)
+   <center><img style="border-radius:15%;" src="images/turbo.jpg" alt="COURSE4CODERS" width="30%" height="10%"></center></p>
+<!--end of content-->
+</div> 
+
+
+
+<!--start of back and forward buttons-->
+<div  style = "margin-top: 1%;margin-bottom:1%">
+<a href = "applicationofc.html" class = "btn btn-default"  id = "previousButton" style="float: left;"><i class = "fa fa-step-backward"> Previous </i></a>
+<a href = "sourcevsobjectcode.html" class = "btn btn-default" id = "nextButton"  style = "float: right;"> Next <i class = "fa fa-step-forward"></i></a>
+</div>
+
+<!--end of back and forward buttons-->
+</div>
+<!--end of second area code--> 
+
+
+
+<!--start of third area code--> 
+
+<div id="thirdarea">
+
+<div id="small1"><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FCourse4coders-1820062084941592%2F&width=100px&layout=standard&action=like&size=large&show_faces=true&share=true&height=80&appId" width="260px" height="100" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
+<div id="small2"><a class="gmail" style="background-color:yellow;"href="mailto:pranavadarsh95@gmail.com"data-size="large">MAIL@course4coders</a></div>
+<div id="small3"><a class="twitter-follow-button" style="background-color:yellow;"href="https://twitter.com/course4coders"data-size="large">Follow @course4coders</a></div>
+<div id="small4"><a class="youtube" style="background-color:yellow;"href="https://www.youtube.com/channel/UCqsi0TtM8XUJL2P7hgIni9Q"data-size="large">YOUTUBE@course4coders</a></div>
+</div>
+
+<!--end of third area code--> 
+   
+   <!--comment javascript code-->
+     
+  <div id="disqus_thread"></div>
+  <script>
+
+  /**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+  /*
+  var disqus_config = function () {
+  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+  };
+  */
+  (function() { // DON'T EDIT BELOW THIS LINE
+  var d = document, s = d.createElement('script');
+  s.src = '//course4learn.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', +new Date());
+  (d.head || d.body).appendChild(s);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                
+  <!--end of javascript comment section-->
+
+
+ <!--start of footer1-->
+  <div id="footer">
+       
+       <!-- start code for developer information-->
+
+       <center style="margin-top:2%;font-family:Ravie;">Designed by&nbsp&nbsp<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;color:white;">ABOUT DEVELOPER</button></center><br/>
+       <center style="font-family:Ravie;">Usefull Android App links <a href="" target="_blank">READY TO EXPLORE</a></center>
+       <div id="id01" class="modal">
+  
+         <form class="modal-content animate" action="action_page.php">
+         <div class="imgcontainer">
+         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+         <img src="images/developer.jpg" alt="COURSE4CODERS" class="avatar">
+         </div>
+                
+         <center><h2 style="color:Green;font-family:Ravie;">PRANAV ADARSH</h2></center>
+         <center><h3 style="color:Red;font-family:Ravie;">MICROSOFT STUDENT PARTNER</h3></center>
+         <center><h3 style="color:Red;font-family:Ravie;">Geeksforgeeks Ambassador & Technical article writer</h3></center>  
+         <center><h3 style="color:blue;font-family:Ravie;">pranavadarsh95@gmail.com</h3></center>  
+
+        <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      
+      </div>
+    </form>
+  </div>
+
+   <script>
+
+   var modal = document.getElementById('id01');
+
+   window.onclick = function(event) {
+       if (event.target == modal) {
+            modal.style.display = "none";
+       }
+    }
+    </script>
+
+    <!--end code for developer information-->
+      
+  </footer>
+  </div>
+   <!--end of footer1-->
+
+     <!--start of footer2-->
+    
+   <div id="footer2">
+   <ul style="list-style-type: none;font-family:Ravie;">
+<center><li><a href="aboutus.html"style="color:black;">About us</a></li></center>
+<li><span>&nbsp;|&nbsp;</span><a href="http://www.dmca.com/Protection/Status.aspx?ID=eeee17f2-efe7-47f6-bceb-b8a837c2feba"style="color:black;">Privacy</a></li>
+<li><span>&nbsp;|&nbsp;</span><a href="http://www.dmca.com/Protection/Status.aspx?ID=eeee17f2-efe7-47f6-bceb-b8a837c2feba"style="color:black;">Copyright</a></li>
+<li><span>&nbsp;|&nbsp;</span><a href="mailto:pranavadarsh95@gmail.com"style="color:black;">Feedback</a></li>
+</ul>
+     <center><a href="http://www.dmca.com/Protection/Status.aspx?ID=eeee17f2-efe7-47f6-bceb-b8a837c2feba" title="DMCA.com Protection Status" class="dmca-badge"> <img src="//images.dmca.com/Badges/dmca-badge-w100-5x1-09.png?ID=eeee17f2-efe7-47f6-bceb-b8a837c2feba" alt="DMCA.com Protection Status"></a> <script src="//images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script><center>   
+   </div> 
+   <!--end of footer2-->
+  </body>
+  </html>
